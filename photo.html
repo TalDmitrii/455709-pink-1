@@ -4,13 +4,14 @@
     <meta charset="utf-8">
     <title>HTML Academy: Pink</title>
     <link href="http://fonts.fontstorage.com/import/opensans.css" rel="stylesheet">
+    <link href="source\css\style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
-      <h1 class="header">
-        Фотографии пользователей
-      </h1>
       <nav class="main-navigation">
+        <h1 class="main-header">
+          Фотографии пользователей
+        </h1>
         <ul class="main-navigation__list menu-list menu-list--open">
           <li class="menu-list__item menu-list__item--top">
             <img src="#" width="75" height="22" alt="Логотип Пинк">
@@ -22,13 +23,13 @@
             Главная
           </li>
           <li class="menu-list__item">
-            <a href="photo.html">Фотографии</a>
+            <a class="menu-list__item--link" href="photo.html">Фотографии</a>
           </li>
           <li class="menu-list__item">
-            <a href="form.html">Конкурс</a>
+            <a class="menu-list__item--link" href="form.html">Конкурс</a>
           </li>
           <li class="menu-list__item">
-            <a href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a>
+            <a class="menu-list__item--link" href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a>
           </li>
         </ul>
         <div class="menu-list menu-list--closed">
@@ -54,15 +55,15 @@
         </div>
         <ul class="photos__list">
           <li class="photos__item">
-            <div class="panorama-of-the-day__image">
-              <img src="img/panorama-mobile@1x.jpg" width="320" height="140" alt="photo">
-              <button type="button">
+            <div class="panorama-of-the-day">
+              <img src="source/img/panorama-mobile@1x.jpg" width="320" height="140" alt="photo">
+              <a href="#" class="button-panorama">
                 Панорама дня
-              </button>
+              </a>
             </div>
             <div class="photos__comment">
               <p class="photos__header">
-                <strong>Анна</strong> <span class="time">(5 минут назад)</span>
+                <strong>Анна</strong> <span class="photos__time">(5 минут назад)</span>
               </p>
               <p class="photos__text">
                 Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую
@@ -79,10 +80,10 @@
             </div>
           </li>
           <li class="photos__item">
-            <img src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="photo">
+            <img src="source/img/photo-car-mobile@1x.jpg" width="280" height="180" alt="photo">
             <div class="photos__comment">
               <p class="photos__header">
-                <strong>Левон</strong> <span class="time">(5 часов назад)</span>
+                <strong>Левон</strong> <span class="photos__time">(5 часов назад)</span>
               </p>
               <p class="photos__text">
                 Вчера он на луну летал, сегодня в руки к нам попал.
@@ -98,10 +99,10 @@
             </div>
           </li>
           <li class="photos__item">
-            <img src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="photo">
+            <img src="source/img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="photo">
             <div class="photos__comment">
               <p class="photos__header">
-                <strong>Антон</strong> <span class="time">(12 часов назад)</span>
+                <strong>Антон</strong> <span class="photos__time">(12 часов назад)</span>
               </p>
               <p class="photos__text">
                 Соседи будут рады!
@@ -117,10 +118,10 @@
             </div>
           </li>
           <li class="photos__item">
-            <img src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="photo">
+            <img src="source/img/photo-window-mobile@1x.jpg" width="280" height="180" alt="photo">
             <div class="photos__comment">
               <p class="photos__header">
-                <strong>Борис</strong> <span class="time">(20 часов назад)</span>
+                <strong>Борис</strong> <span class="photos__time">(20 часов назад)</span>
               </p>
               <p class="photos__text">
                 Здесь могла быть ваша цитата о высоком и вечном.
@@ -136,10 +137,10 @@
             </div>
           </li>
           <li class="photos__item">
-            <img src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="photo">
+            <img src="source/img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="photo">
             <div class="photos__comment">
               <p class="photos__header">
-                <strong>Сергей</strong> <span class="time">(25 часов назад)</span>
+                <strong>Сергей</strong> <span class="photos__time">(25 часов назад)</span>
               </p>
               <p class="photos__text">
                 Самая кубанская в мире!
@@ -155,10 +156,10 @@
             </div>
           </li>
           <li class="photos__item">
-            <img src="img/photo-road-mobile@1x.jpg" width="280" height="180" alt="photo">
+            <img src="source/img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="photo">
             <div class="photos__comment">
               <p class="photos__header">
-                <strong>Максим</strong> <span class="time">(40 часов назад)</span>
+                <strong>Максим</strong> <span class="photos__time">(40 часов назад)</span>
               </p>
               <p class="photos__text">
                 Где снег-то?
@@ -174,10 +175,10 @@
             </div>
           </li>
           <li class="photos__item">
-            <img src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="photo">
+            <img src="source/img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="photo">
             <div class="photos__comment">
               <p class="photos__header">
-                <strong>Надежда</strong> <span class="time">(45 часов назад)</span>
+                <strong>Надежда</strong> <span class="photos__time">(45 часов назад)</span>
               </p>
               <p class="photos__text">
                 Всем GM и взаимные лайки!
@@ -222,10 +223,10 @@
               </li>
             </ul>
           </div>
-          <button class="button" type="submit">
+          <button class="button button--submit" type="submit">
             Запостить
           </button>
-          <button class="button" type="reset">
+          <button class="button button--reset" type="reset">
             Отмена
           </button>
         </form>

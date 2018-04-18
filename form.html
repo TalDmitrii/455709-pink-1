@@ -4,13 +4,14 @@
     <meta charset="utf-8">
     <title>HTML Academy: Pink</title>
     <link href="http://fonts.fontstorage.com/import/opensans.css" rel="stylesheet">
+    <link href="source\css\style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
-      <h1 class="header">
-        Конкурс на самое безбашенное путешествие с Пинк
-      </h1>
       <nav class="main-navigation">
+        <h1 class="main-header">
+          Конкурс на самое безбашенное путешествие с Пинк
+        </h1>
         <ul class="main-navigation__list menu-list menu-list--open">
           <li class="menu-list__item menu-list__item--top">
             <img src="#" width="75" height="22" alt="Логотип Пинк">
@@ -22,13 +23,13 @@
             Главная
           </li>
           <li class="menu-list__item">
-            <a href="photo.html">Фотографии</a>
+            <a class="menu-list__item--link" href="photo.html">Фотографии</a>
           </li>
           <li class="menu-list__item">
-            <a href="form.html">Конкурс</a>
+            <a class="menu-list__item--link" href="form.html">Конкурс</a>
           </li>
           <li class="menu-list__item">
-            <a href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a>
+            <a class="menu-list__item--link" href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a>
           </li>
         </ul>
         <div class="menu-list menu-list--closed">
@@ -48,22 +49,22 @@
         </p>
       </div>
       <form class="competition__form form" action="https://echo.htmlacademy.ru" method="post">
-        <section class="form__personal-data">
+        <section class="form__personal-name personal-info">
           <h2 class="visually-hidden">
             Персональные данные
           </h2>
-          <label class="form__label" for="last-name">
+          <label class="personal-info__label" for="last-name">
             Фамилия:
           </label>
-          <input class="form__input" type="text" name="last-name" id="last-name" placeholder="Укажите фамилию *" required>
-          <label class="form__label" for="first-name">
+          <input class="personal-info__input" type="text" name="last-name" id="last-name" placeholder="Укажите фамилию *" required>
+          <label class="personal-info__label" for="first-name">
             Имя:
           </label>
-          <input class="form__input" type="text" name="first-name" id="first-name" placeholder="Введите ваше имя *" required>
-          <label class="form__label" for="middle-name">
+          <input class="personal-info__input" type="text" name="first-name" id="first-name" placeholder="Введите ваше имя *" required>
+          <label class="personal-info__label" for="middle-name">
             Отчество:
           </label>
-          <input class="form__input" type="text" name="middle-name" id="middle-name" placeholder="Ну и отчество тоже">
+          <input class="personal-info__input" type="text" name="middle-name" id="middle-name" placeholder="Ну и отчество тоже">
         </section>
         <section class="form__personal-progress">
           <h2 class="form__block-header">
@@ -71,7 +72,7 @@
           </h2>
           <input class="form__input" type="checkbox" name="progress-1" id="progress-1" checked>
           <label class="form__label" for="progress-1">
-            Сделал сэлфи с акулой
+            Сделал селфи с акулой
           </label>
           <input class="form__input" type="checkbox" name="progress-2" id="progress-2" checked>
           <label class="form__label" for="progress-2">
@@ -94,18 +95,18 @@
             Разгромил отель
           </label>
         </section>
-        <section class="form__personal-contacts">
+        <section class="form__personal-contacts personal-info">
           <h2 class="visually-hidden">
             Персональные данные
           </h2>
-          <label class="form__label" for="phone-number">
+          <label class="personal-info__label" for="phone-number">
             Номер телефона
           </label>
-          <input class="form__input" type="tel" name="phone-number" id="phone-number" placeholder="Номер, пожалуйста">
-          <label class="form__label" for="email">
+          <input class="personal-info__input" type="tel" name="phone-number" id="phone-number" placeholder="Номер, пожалуйста">
+          <label class="personal-info__label" for="email">
             Адрес почты
           </label>
-          <input class="form__input" type="email" name="email" id="email" placeholder="Введите почту *" required>
+          <input class="personal-info__input" type="email" name="email" id="email" placeholder="Введите почту *" required>
         </section>
         <section class="form__personal-app">
           <h2 class="form__block-header">
@@ -124,18 +125,18 @@
             Windows Phone
           </label>
         </section>
-        <div class="form__comments">s
-          <label class="form__label" for="textarea-comments">
+        <div class="form__comments">
+          <label class="form__block-header" for="textarea-comments">
             Опишите свои эмоции
           </label>
-          <textarea class="form__comments-textarea" name="textarea-comments" id="textarea-comments" rows="5">Можно прям в красках, не стесняясь в выражениях
-          </textarea>
+          <textarea class="form__comments-textarea" name="textarea-comments" id="textarea-comments" placeholder="Можно прям в красках, не стесняясь в выражениях
+          " rows="5"></textarea>
         </div>
         <button class="form__button" type="submit">
           Отправить форму
         </button>
         <p class="form__condition">
-          <span class="form__condition red">*</span>-обязательные поля
+          <span class="form__condition--red-star">*</span>-обязательные поля
         </p>
       </form>
     </main>
