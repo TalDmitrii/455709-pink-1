@@ -1,21 +1,39 @@
 .menu-list {
+  display: flex;
+  flex-direction: column;
+
   background-color: @main-color;
+
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
+
+@media (min-width: 1200px) {
+  .menu-list {
+    flex-direction: row;
+  }
+}
+
 
 .menu-list--open {
   font-family: inherit;
 }
 
 .menu-list--closed {
-  background-image: url("source/img/bg-back-mobile@1x.jpg");
+  font-family: inherit;
 }
 
 .menu-list__item {
+  align-self: center;
+
   font-family: @main-font;
   font-size: 18px;
   line-height: 32px;
   font-weight: 700;
   color: #ffffff;
+
+  padding: 16px 0;
 
   text-transform: uppercase;
 }
@@ -28,5 +46,10 @@
 }
 
 .menu-list__item--top {
-  font-family: inherit;
+  align-self: stretch;
+
+  line-height: 22px;
+
+  padding: 22px 0;
+  padding-left: 20px;
 }

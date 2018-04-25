@@ -4,15 +4,15 @@
     <meta charset="utf-8">
     <title>HTML Academy: Pink</title>
     <link href="http://fonts.fontstorage.com/import/opensans.css" rel="stylesheet">
-    <link href="source\css\style.css" rel="stylesheet">
+    <link href="source/css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="page-body">
     <header class="page-header">
       <nav class="main-navigation">
         <ul class="main-navigation__list menu-list menu-list--open">
           <li class="menu-list__item menu-list__item--top">
-            <img src="#" width="75" height="22" alt="Логотип Пинк">
-            <button class="button" type="button">
+            <img src="source/img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип Пинк">
+            <button class="button visually-hidden" type="button">
               Закрыть
             </button>
           </li>
@@ -29,11 +29,11 @@
             <a class="menu-list__item--link" href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a>
           </li>
         </ul>
-        <div class="menu-list menu-list--closed">
+        <div class="menu-list menu-list--closed visually-hidden">
           <p class="menu-list__item--top">
-            <img src="#" width="75" height="22" alt="Логотип Пинк">
+            <img src="source/img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип Пинк">
             <button class="button" type="button">
-              Закрыть
+              burger
             </button>
           </p>
         </div>
@@ -42,22 +42,28 @@
         <h2 class="visually-hidden">
           Скачать приложение
         </h2>
-        <a class="download__button button" href="https://www.apple.com/ru/itunes/">Скачать приложение</a>
+        <p class="image-insert">
+          <img class="image-insert__image" src="source/img/iphone-hand-mobile@1x.png" width="258" height="314" alt="img">
+        </p>
         <div class="available-platform">
+          <p class="download__intro">
+            Взгляните на жизнь иначе!
+          </p>
+          <a class="download__button button" href="https://www.apple.com/ru/itunes/">Скачать приложение</a>
           <ul class="available-platform__list">
             <li class="available-platform__item">
               <a href="https://www.apple.com/ru/">
-                <img src="img/logo-apple.svg" width="48" height="58" alt="Логотип Apple">
+                <img src="source/img/logo-apple.svg" width="47" height="56" alt="Логотип Apple">
               </a>
             </li>
             <li class="available-platform__item">
               <a href="https://androidapplications.ru/programs/">
-                <img src="img/logo-android.svg" width="44" height="48" alt="Логотип Android">
+                <img src="source/img/logo-android.svg" width="43" height="47" alt="Логотип Android">
               </a>
             </li>
             <li class="available-platform__item">
               <a href="https://www.microsoft.com/ru-ru/store/apps/?rtc=1">
-                <img src="img/logo-microsoft.svg" width="45" height="41" alt="Логотип Microsoft">
+                <img src="source/img/logo-microsoft.svg" width="44" height="41" alt="Логотип Microsoft">
               </a>
             </li>
           </ul>
@@ -72,41 +78,62 @@
         <h2 class="visually-hidden">
           Преимущества
         </h2>
-        <div class="features-intro">
-          <p class="features-intro__text">
+        <div class="features__intro">
+          <p class="features__intro-text">
             Устали от серости мегаполиса?
           </p>
-          <p class="features-intro__text">
+          <p class="features__intro-text">
             Нам есть, что вам предложить!
           </p>
         </div>
-        <ul class="features__list">
-          <li class="features__item">
-            <h3 class="features__header">
-              Поднимает настроение
-            </h3>
-            <p class="features__text">
-              Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+        <div class="features__wrapper">
+          <ul class="features__list">
+            <li class="features__item">
+              <h3 class="features__header">
+                Поднимает настроение
+              </h3>
+              <p class="features__text">
+                Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+              </p>
+            </li>
+            <li class="features__item">
+              <h3 class="features__header">
+                Меняет мир вокруг
+              </h3>
+              <p class="features__text">
+                Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+              </p>
+            </li>
+            <li class="features__item">
+              <h3 class="features__header">
+                Заводит новых друзей
+              </h3>
+              <p class="features__text">
+                Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+              </p>
+            </li>
+          </ul>
+          <div class="features__images">
+            <img class="features__images--hide" src="source/img/iphone-screen-mobile@1x.png" width="157" height="277" alt="img">
+            <img src="source/img/iphone-screen-mobile@1x.png" width="157" height="277" alt="img">
+            <img class="features__images--hide" src="source/img/iphone-screen-mobile@1x.png" width="157" height="277" alt="img">
+          </div>
+        </div>
+        <article class="round-diagram">
+          <img src="source/img/3-layers.png" width="238" height="276" alt="diagram">
+          <div class="round-diagram__wrapper">
+            <p class="round-diagram__intro">
+              Эффект на 24 часа!
             </p>
-          </li>
-          <li class="features__item">
-            <h3 class="features__header">
-              Меняет мир вокруг
-            </h3>
-            <p class="features__text">
-              Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+            <p class="round-diagram__text">
+              Британские ученые провели исследования и доказали,
+              что положительный эффект от использования приложения длится целые сутки!
             </p>
-          </li>
-          <li class="features__item">
-            <h3 class="features__header">
-              Заводит новых друзей
-            </h3>
-            <p class="features__text">
-              Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
-            </p>
-          </li>
-        </ul>
-        <img src="#" width="157" height="277" alt="img">
+            <a class="round-diagram__link" href="https://ru.wikipedia.org/wiki/Научное_исследование">
+              Узнать больше об исследовании
+            </a>
+          </div>
+        </article>
       </section>
       <section class="reviews">
         <div class="reviews__wrapper slider">
@@ -115,26 +142,41 @@
           </h2>
           <ul class="reviews__list">
             <li class="reviews__item">
-              <h3 class="reviews__header">
-                Николай Петров
-              </h3>
+              <div class="reviews__person">
+                <h3 class="reviews__person--name">
+                  Николай Петров
+                </h3>
+                <p class="reviews__person--info">
+                  25 лет, водитель трамвая
+                </p>
+              </div>
               <p class="reviews__text">
                 "Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
                 А ещё я познакомился со своей будущей женой в комментариях к выложенной фотографии!"
               </p>
             </li>
             <li class="reviews__item visually-hidden">
-              <h3 class="reviews__header">
-                Игорь Васильев
-              </h3>
+              <div class="reviews__person">
+                <h3 class="reviews__person--name">
+                  Игорь Васильев
+                </h3>
+                <p class="reviews__person--info">
+                  30 лет, студент
+                </p>
+              </div>
               <p class="reviews__text">
                 "Потрясающее приложение! Спасибо разработчикам!"
               </p>
             </li>
             <li class="reviews__item visually-hidden">
-              <h3 class="reviews__header">
-                Егор Дмитриев
-              </h3>
+              <div class="reviews__person">
+                <h3 class="reviews__person--name">
+                  Егор Дмитриев
+                </h3>
+                <p class="reviews__person--info">
+                  27 лет, инженер
+                </p>
+              </div>
               <p class="reviews__text">
                 "Ни на один миг не пожалел потраченных денег! Рекомендую всем!"
               </p>
@@ -267,6 +309,11 @@
             </p>
           </li>
         </ul>
+      </section>
+      <section class="map">
+        <h2 class="visually-hidden">
+          Мы на карте
+        </h2>
       </section>
     </footer>
   </body>

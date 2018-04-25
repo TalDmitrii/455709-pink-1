@@ -33,8 +33,10 @@
   color: @main-color;
 }
 
-.price__toggles {
-  font-family: inherit;
+@media (min-width: @tablet-width) {
+  .price__toggles {
+    display: none;
+  }
 }
 
 .price__wrapper {

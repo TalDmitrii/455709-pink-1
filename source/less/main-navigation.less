@@ -1,8 +1,16 @@
 .main-navigation {
+  position: relative;
+  min-width: 320px;
+
   background-color: @main-color;
-  background-image: url("../source/img/bg-back-mobile@1x.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
+}
+
+@media (min-width: @desktop-width) {
+  .main-navigation {
+    width: 940px;
+
+    margin: auto;
+  }
 }
 
 .main-navigation__list {
