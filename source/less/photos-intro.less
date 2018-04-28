@@ -1,10 +1,32 @@
 .photos-intro {
-  font-family: inherit;
+  width: 245px;
+
+  margin: 0 auto;
 }
 
 .photos-intro__text {
+  vertical-align: middle;
+
   font-size: 14px;
   line-height: 30px;
   font-weight: 400;
   color: @main-color;
+}
+
+@media (min-width: @tablet-width) {
+  .photos-intro__text {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .photos-intro {
+    width: 440px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photos-intro {
+    width: 575px;
+  }
 }

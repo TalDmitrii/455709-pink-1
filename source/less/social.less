@@ -1,11 +1,32 @@
 .social {
-  font-family: inherit;
+  display: flex;
+  justify-content: space-between;
 }
 
 .social__list {
-  font-family: inherit;
+  display: flex;
+  justify-content: space-between;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
 }
 
 .social__item {
   font-family: inherit;
+}
+
+.social--form {
+  flex-direction: column;
+}
+
+@media (min-width: @tablet-width) {
+  .social--form {
+    flex-direction: row;
+  }
+}
+
+.social--index-mobile {
+  display: none;
 }

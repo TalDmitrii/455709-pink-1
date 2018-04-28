@@ -4,5 +4,16 @@
 }
 
 .upload__form {
-  font-family: inherit;
+  display: flex;
+  flex-direction: column;
+
+  width: 280px;
+
+  margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .upload__form {
+    flex-direction: row;
+  }
 }

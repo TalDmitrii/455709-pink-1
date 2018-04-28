@@ -17,3 +17,32 @@
   font-weight: 400;
   color: red;
 }
+
+.personal-info__wrapper-name {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: @tablet-width) {
+  .personal-info__wrapper-name {
+    flex-direction: row;
+  }
+}
+
+.personal-info__wrapper-contact--inner {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: @tablet-width) {
+  .personal-info__wrapper-contact--inner {
+    flex-direction: column-reverse;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .personal-info__wrapper-contact {
+    display: flex;
+    justify-content: space-around;
+  }
+}
