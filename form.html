@@ -2,20 +2,22 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport"
+      content="width=device-width, initial-scale=1">
     <title>HTML Academy: Pink</title>
     <link href="http://fonts.fontstorage.com/import/opensans.css" rel="stylesheet">
-    <link href="source\css\style.css" rel="stylesheet">
+    <link href="source/css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
-      <nav class="main-navigation">
+      <nav class="main-navigation main-navigation--reverse">
         <h1 class="main-header">
           Конкурс на самое безбашенное путешествие с Пинк
         </h1>
         <ul class="main-navigation__list menu-list menu-list--open">
           <li class="menu-list__item menu-list__item--top">
-            <img src="#" width="75" height="22" alt="Логотип Пинк">
-            <button class="button" type="button">
+            <img src="source/img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип Пинк">
+            <button class="button visually-hidden" type="button">
               Закрыть
             </button>
           </li>
@@ -32,7 +34,7 @@
             <a class="menu-list__item--link" href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a>
           </li>
         </ul>
-        <div class="menu-list menu-list--closed">
+        <div class="menu-list menu-list--closed visually-hidden">
           <p class="menu-list__item--top">
             <img src="#" width="75" height="22" alt="Логотип Пинк">
             <button class="button" type="button">
@@ -53,123 +55,160 @@
           <h2 class="visually-hidden">
             Персональные данные
           </h2>
-          <label class="personal-info__label" for="last-name">
-            Фамилия:
-          </label>
-          <input class="personal-info__input" type="text" name="last-name" id="last-name" placeholder="Укажите фамилию *" required>
-          <label class="personal-info__label" for="first-name">
-            Имя:
-          </label>
-          <input class="personal-info__input" type="text" name="first-name" id="first-name" placeholder="Введите ваше имя *" required>
-          <label class="personal-info__label" for="middle-name">
-            Отчество:
-          </label>
-          <input class="personal-info__input" type="text" name="middle-name" id="middle-name" placeholder="Ну и отчество тоже">
+          <div class="personal-info__wrapper-name">
+            <label class="personal-info__label" for="last-name">
+              Фамилия:
+            </label>
+            <input class="personal-info__input" type="text" name="last-name" id="last-name" placeholder="Укажите фамилию *" required>
+          </div>
+          <div class="personal-info__wrapper-name">
+            <label class="personal-info__label" for="first-name">
+              Имя:
+            </label>
+            <input class="personal-info__input" type="text" name="first-name" id="first-name" placeholder="Введите ваше имя *" required>
+          </div>
+          <div class="personal-info__wrapper-name">
+            <label class="personal-info__label" for="middle-name">
+              Отчество:
+            </label>
+            <input class="personal-info__input" type="text" name="middle-name" id="middle-name" placeholder="Ну и отчество тоже">
+          </div>
         </section>
-        <section class="form__personal-progress">
+        <section class="form__personal-progress progress-info">
           <h2 class="form__block-header">
             Ваши безбашенные достижения в путешествии
           </h2>
-          <input class="form__input" type="checkbox" name="progress-1" id="progress-1" checked>
-          <label class="form__label" for="progress-1">
-            Сделал селфи с акулой
-          </label>
-          <input class="form__input" type="checkbox" name="progress-2" id="progress-2" checked>
-          <label class="form__label" for="progress-2">
-            Обгорел на пляже
-          </label>
-          <input class="form__input" type="checkbox" name="progress-3" id="progress-3">
-          <label class="form__label" for="progress-3">
-            Видел Чака Норриса
-          </label>
-          <input class="form__input" type="checkbox" name="progress-4" id="progress-4">
-          <label class="form__label" for="progress-4">
-            Накупил сувениров
-          </label>
-          <input class="form__input" type="checkbox" name="progress-5" id="progress-5" checked>
-          <label class="form__label" for="progress-5">
-            Удержал башню
-          </label>
-          <input class="form__input" type="checkbox" name="progress-6" id="progress-6">
-          <label class="form__label" for="progress-6">
-            Разгромил отель
-          </label>
+          <div class="progress-info__wrapper">
+            <div class="progress-info__wrapper--inner">
+              <input class="form__input" type="checkbox" name="progress-1" id="progress-1" checked>
+              <label class="form__label" for="progress-1">
+                Сделал селфи с акулой
+              </label>
+            </div>
+            <div class="progress-info__wrapper--inner">
+              <input class="form__input" type="checkbox" name="progress-2" id="progress-2" checked>
+              <label class="form__label" for="progress-2">
+                Обгорел на пляже
+              </label>
+            </div>
+            <div class="progress-info__wrapper--inner">
+              <input class="form__input" type="checkbox" name="progress-3" id="progress-3">
+              <label class="form__label" for="progress-3">
+                Видел Чака Норриса
+              </label>
+            </div>
+            <div class="progress-info__wrapper--inner">
+              <input class="form__input" type="checkbox" name="progress-4" id="progress-4">
+              <label class="form__label" for="progress-4">
+                Накупил сувениров
+              </label>
+            </div>
+            <div class="progress-info__wrapper--inner">
+              <input class="form__input" type="checkbox" name="progress-5" id="progress-5" checked>
+              <label class="form__label" for="progress-5">
+                Удержал башню
+              </label>
+            </div>
+            <div class="progress-info__wrapper--inner">
+              <input class="form__input" type="checkbox" name="progress-6" id="progress-6">
+              <label class="form__label" for="progress-6">
+                Разгромил отель
+              </label>
+            </div>
+          </div>
         </section>
         <section class="form__personal-contacts personal-info">
-          <h2 class="visually-hidden">
-            Персональные данные
+          <h2 class="form__block-header contact-header">
+            Контактная информация
           </h2>
-          <label class="personal-info__label" for="phone-number">
-            Номер телефона
-          </label>
-          <input class="personal-info__input" type="tel" name="phone-number" id="phone-number" placeholder="Номер, пожалуйста">
-          <label class="personal-info__label" for="email">
-            Адрес почты
-          </label>
-          <input class="personal-info__input" type="email" name="email" id="email" placeholder="Введите почту *" required>
+          <div class="personal-info__wrapper-contact">
+            <div class="personal-info__wrapper-contact--inner">
+              <label class="personal-info__label" for="phone-number">
+                Номер телефона
+              </label>
+              <input class="personal-info__input" type="tel" name="phone-number" id="phone-number" placeholder="Номер, пожалуйста">
+            </div>
+            <div class="personal-info__wrapper-contact--inner">
+              <label class="personal-info__label" for="email">
+                Адрес почты
+              </label>
+              <input class="personal-info__input" type="email" name="email" id="email" placeholder="Введите почту *" required>
+            </div>
+          </div>
         </section>
-        <section class="form__personal-app">
+        <section class="form__personal-app app-info">
           <h2 class="form__block-header">
             С каким приложением путешествовали?
           </h2>
-          <input class="form__input" type="radio" name="question-1" id="ios" checked>
-          <label class="form__label" for="ios">
-            Pink для iOS
-          </label>
-          <input class="form__input" type="radio" name="question-1" id="android">
-          <label class="form__label" for="android">
-            Pink на Android
-          </label>
-          <input class="form__input" type="radio" name="question-1" id="windows-phone">
-          <label class="form__label" for="windows-phone">
-            Windows Phone
-          </label>
+          <div class="app-info__wrapper">
+            <input class="form__input" type="radio" name="question-1" id="ios" checked>
+            <label class="form__label" for="ios">
+              Pink для iOS
+            </label>
+          </div>
+          <div class="app-info__wrapper">
+            <input class="form__input" type="radio" name="question-1" id="android">
+            <label class="form__label" for="android">
+              Pink на Android
+            </label>
+          </div>
+          <div class="app-info__wrapper">
+            <input class="form__input" type="radio" name="question-1" id="windows-phone">
+            <label class="form__label" for="windows-phone">
+              Windows Phone
+            </label>
+          </div>
         </section>
-        <div class="form__comments">
+        <section class="form__comments comment">
+          <h2 class="visually-hidden">
+            Отзывы
+          </h2>
           <label class="form__block-header" for="textarea-comments">
             Опишите свои эмоции
           </label>
           <textarea class="form__comments-textarea" name="textarea-comments" id="textarea-comments" placeholder="Можно прям в красках, не стесняясь в выражениях
           " rows="5"></textarea>
+        </section>
+        <div class="form__button--wrapper">
+          <button class="form__button" type="submit">
+            Отправить форму
+          </button>
+          <p class="form__condition">
+            <span class="form__condition--red-star">*</span>-обязательные поля
+          </p>
         </div>
-        <button class="form__button" type="submit">
-          Отправить форму
-        </button>
-        <p class="form__condition">
-          <span class="form__condition--red-star">*</span>-обязательные поля
-        </p>
       </form>
     </main>
     <footer class="page-footer">
-      <div class="footer-logo">
-        <img src="#" width="75" height="22" alt="Логотип Pink">
-      </div>
-      <div class="social">
+      <div class="social social--form">
+        <div class="footer-logo">
+          <img src="source/img/logo-pink-blue-mobile.svg" width="75" height="22" alt="Логотип Pink">
+        </div>
         <ul class="social__list">
           <li class="social__item">
             <a href="#">
-              <img src="img/icon-twitter.svg" width="18" height="14" alt="twitter">
+              <img src="source/img/icon-twitter.svg" width="18" height="14" alt="twitter">
             </a>
           </li>
           <li class="social__item">
             <a href="#">
-              <img src="img/icon-facebook.svg" width="9" height="18" alt="facebook">
+              <img src="source/img/icon-facebook.svg" width="9" height="18" alt="facebook">
             </a>
           </li>
           <li class="social__item">
             <a href="#">
-              <img src="img/icon-youtube.svg" width="15" height="13" alt="youtube">
+              <img src="source/img/icon-youtube.svg" width="15" height="13" alt="youtube">
             </a>
           </li>
         </ul>
-      </div>
-      <div class="developed">
-        <p class="developed__text">
-          Разработано
-        </p>
-        <a href="https://htmlacademy.ru/intensive/adaptive">
-          <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="HTML Academy logo">
-        </a>
+        <div class="developed">
+          <p class="developed__text">
+            Разработано
+          </p>
+          <a href="https://htmlacademy.ru/intensive/adaptive">
+            <img src="source/img/logo-htmlacademy.svg" width="27" height="34" alt="HTML Academy logo">
+          </a>
+        </div>
       </div>
     </footer>
   </body>

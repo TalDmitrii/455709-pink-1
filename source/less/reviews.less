@@ -10,7 +10,14 @@
   font-family: inherit;
 }
 
-.reviews__header {
+@media (min-width: @tablet-width) {
+  .reviews__item {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+.reviews__person--name {
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
@@ -24,8 +31,10 @@
   color: @main-color;
 }
 
-.reviews__toggles {
-  font-family: inherit;
+@media (min-width: @desktop-width) {
+  .reviews__toggles {
+    display: none;
+  }
 }
 
 .reviews__wrapper {

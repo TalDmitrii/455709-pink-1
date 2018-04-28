@@ -4,11 +4,22 @@
 }
 
 .photos__list {
-  font-family: inherit;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
 }
 
 .photos__item {
-  font-family: inherit;
+  width: 280px;
+}
+
+.photos__comment {
+  background-color: #f2f2f2;
 }
 
 .photos__header {
@@ -29,6 +40,21 @@
   text-transform: uppercase;
 }
 
-.photos__comment {
-  font-family: inherit;
+@media (min-width: @tablet-width) {
+  .photos__item {
+    width: 300px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .photos__comment--panorama {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .photos__text--panorama {
+    order: 2;
+  }
 }

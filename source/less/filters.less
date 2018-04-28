@@ -1,3 +1,24 @@
 .filters {
-  display: block;
+  font-family: inherit;
+}
+
+.filters__list {
+  display: flex;
+}
+
+@media (min-width: @tablet-width) {
+  .filters__list {
+    flex-direction: column;
+  }
+}
+
+.filters__wrapper--button {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: @desktop-width) {
+  .filters__wrapper--button {
+    flex-direction: row;
+  }
 }

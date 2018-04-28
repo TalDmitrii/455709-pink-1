@@ -2,6 +2,17 @@
   background-color: #1d2631;
 }
 
+@media (min-width: @tablet-width) {
+  .download {
+    min-height: 729px;
+
+    background-color: @main-color;
+    background-image: url("../img/bg-back-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 700px;
+  }
+}
+
 .download__button {
   font-family: @main-font;
   font-size: 18px;
@@ -10,4 +21,22 @@
   color: #ffffff;
 
   text-decoration: none;
+}
+
+.download__intro {
+  display: none;
+  width: 190px;
+
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 300;
+  color: @white;
+
+  margin: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .download__intro {
+    display: block;
+  }
 }

@@ -1,9 +1,13 @@
+.likes {
+  display: flex;
+}
+
 .likes::before {
-  content: "aaaa";
+  content: "";
   width: 13px;
   height: 12px;
 
-  background-image: url("source/img/icon-heart.svg");
+  //background-image: url("../img/icon-heart.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -19,9 +23,16 @@
 }
 
 .likes__button {
-  display: block;
+  font-size: inherit;
 }
 
 .likes__icon-heart {
-  display: block;
+  font-size: inherit;
+}
+
+@media (min-width: @tablet-width) {
+  .likes {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
 }
