@@ -1,18 +1,3 @@
-.download {
-  background-color: #1d2631;
-}
-
-@media (min-width: @tablet-width) {
-  .download {
-    min-height: 729px;
-
-    background-color: @main-color;
-    background-image: url("../img/bg-back-mobile@1x.jpg");
-    background-repeat: no-repeat;
-    background-size: 700px;
-  }
-}
-
 .download__button {
   font-family: @main-font;
   font-size: 18px;
@@ -33,6 +18,12 @@
   color: @white;
 
   margin: 0;
+}
+
+@media (max-width: @tablet-width) {
+  .download {
+    background-color: #1d2631;
+  }
 }
 
 @media (min-width: @tablet-width) {
